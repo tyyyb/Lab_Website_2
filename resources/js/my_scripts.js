@@ -16,8 +16,6 @@ var players = [{name:"John Doe", img: "../resources/img/player1.jpg", alt:"Image
 	{name:"Samuel Phillips", img: "../resources/img/player3.jpg", alt:"Image of Player 3", year:"Freshman", major:"Math", games_played: 8, pass_yards: 35, rushing_yards: 70, receiving_yards: 98},
 	{name:"Robert Myers", img: "../resources/img/player4.jpg", alt:"Image of Player 4", year:"Senior", major:"Computer Science", games_played: 31, pass_yards: 802, rushing_yards: 375, receiving_yards: 128}];
 
-
-
 /*
 	Registration Page:
 		viewStudentStats(id, toggle) method
@@ -164,7 +162,5 @@ function switchPlayers(playNum){
 	document.getElementById("avg_p_yards").innerHTML = Math.round(players[playNum].pass_yards /players[playNum].games_played);
 	document.getElementById("avg_r_yards").innerHTML = Math.round(players[playNum].rushing_yards/players[playNum].games_played);
 	document.getElementById("avg_rec_yards").innerHTML = Math.round(players[playNum].receiving_yards/players[playNum].games_played);
-
-
 }
 

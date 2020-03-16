@@ -83,7 +83,7 @@ function loadStatsPage() {
 	var losses = 0;
 	var table = document.getElementById("stats_table");
 	for (var i = 2; i < table.rows.length; i++) {
-		if (table.rows[i].cells[2].innerHTML > table.rows[i].cells[3].innerHTML) {
+		if (parseInt(table.rows[i].cells[2].innerHTML) > parseInt(table.rows[i].cells[3].innerHTML)) {
 			table.rows[i].cells[4].innerHTML = "CU Boulder";
 			wins++;
 		}else{
